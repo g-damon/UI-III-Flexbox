@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -64,3 +64,216 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+html {
+	font-size: 10px;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*header and nav*/
+
+header {
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: stretch;
+	align-items: center;
+}
+
+nav {
+	width: 70%;
+	line-height: 2.5em;
+	display: flex;
+	justify-content: space-between;
+}
+nav a {
+	font-size: 1.4em;
+	width: 15%;
+	text-decoration: none;
+}
+
+nav a:hover, nav a:focus  {
+	font-size: 1.6em;
+	width: 15%;
+	text-decoration: none;
+}
+
+.logo-container {
+	margin: 0 auto;
+	width: 28%;
+}
+
+.logo {
+	margin: 0 auto;
+	max-width: 60%;
+}
+
+/*font*/
+
+h1 {
+	font-size: 8em;
+	text-align: center;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+h6 {
+	font-size: 1.4em;
+}
+
+p, li {
+	font-size: 1.3em;
+	margin-left: 7px;
+}
+
+/* sections */
+
+section {
+	margin: 3em auto;
+}
+
+.brdr-bttm {
+	padding-bottom: 60px;
+	border-bottom: #000000 2px solid;
+	margin-bottom: 2.5em;
+}
+
+.vertical {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+.horizontal {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+.horizontally {
+	display: flex;
+	justify-content: space-around;
+	align-items: stretch;
+}
+
+
+.hundo {
+	width: 100%;
+	display: flex;
+	justify-content: stretch;
+}
+
+.wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+	/*positioning*/
+ul {
+	margin: 7px auto;
+	list-style-type: square;
+}
+
+li {
+	margin: 7px auto;
+	font-size: 1.5em;
+}
+
+.inline-block {
+	width: 48%;
+
+}
+
+.inline-p {
+	font-size: 1.6em;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+.vert-space{
+display: flex;
+align-items: stretch;
+}
+
+.thirds {
+	width: 33%;
+	min-width: 33%;
+	max-width: 33%;
+}
+
+p.center {
+	text-align: center;
+}
+
+.address {
+	margin:10px;
+}
+
+.gray-box {
+width: 40%;
+background-color: #cccccc;
+border: 1px #222222 solid;
+margin: 10px;
+}
+
+.gray-box h4 {
+	margin: 1em;
+}
+
+.gray-box p {
+	margin: 1em;
+}
+
+.gray-box .grey-btn {
+	margin: 1em;
+}
+
+/*buttons and inputs*/
+
+.clear-btn {
+	background-color: transparent;
+	border: grey 1px solid;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.grey-btn {
+	background: #e5e4e2;
+}
+
+/* images */
+.round-img {
+
+}
+
+.middle-img {
+	margin: 20px auto;
+}
+
+/* footer */
+
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.copy {
+	text-align: center;
+	font-size: 1.3em;
+	margin-bottom: 100px;
+	margin-top: 20px;
+}
